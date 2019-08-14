@@ -2,6 +2,9 @@ package com.example.nave.recyclerview3c_t6
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         lista.add(Android("Honeycomb", "Version: 3.0 - 3.2.6", "Api Level: 9 - 10", avatar5))
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = MyAdapter (lista)
+        viewAdapter = MyAdapter(lista)
 
         rvLista.adapter = viewAdapter
         rvLista.layoutManager = viewManager
